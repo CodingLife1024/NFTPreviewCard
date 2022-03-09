@@ -2,32 +2,145 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+<style>
+
+  body, html {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container{
+    background-color: hsl(216, 50%, 16%);
+    height: 450px;
+    border-radius: 15px;
+    border-left: 20px;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .pic {
+    background: hsl(178, 100%, 50%);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  img {
+    display: block;
+    transition: opacity 0s linear;
+    border-radius: 10px
+  }
+
+  img:hover {
+    opacity: .5;
+    cursor: pointer;
+  }
+
+  h1 {
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  h1:hover {
+    color: hsl(178, 100%, 50%);
+  }
+
+  p {
+    color: white;
+    font-size: 13px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 100;
+    margin-left: 20px;
+  }
+
+  .line {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .eth {
+    color: hsl(178, 100%, 50%);
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+  }
+
+  .time {
+    color:white;
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    margin-right: 18px;
+  }
+
+  hr {
+    margin: 20px;
+    background-color: white;
+    height: 0;
+  }
+
+  .author {
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+  }
+
+  .creation, .name {
+    margin-top: 8px;
+  }
+
+  .name:hover {
+    color:hsl(178, 100%, 50%);
+  }
+
+  .name {
+    cursor: pointer;
+  }
+
+</style>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <div class="container">
+    <figure class="pic"> 
+      <img src="images\image-equilibrium.jpg" alt="picture" height="220" width="220">
+    </figure>
+    <h1>Equilibrium #3429</h1>
+    <p>Our Equilibrium collection promotes <br>
+      balance and calm.</p>
+      <br>
+      <div class="line">
+      <div class="eth">
+        <img src="images\icon-ethereum.svg"alt="eth-icon" width="10" style="float:left";>&nbsp;
+        0.042 ETH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      <div class="time">
+        <img src="images\icon-clock.svg" alt="clock" style="float:left";>&nbsp;
+        3 days left
+      </div>
+      </div>
+      <hr>
+      <div class="author">
+        <div class="face">
+          <img src="images\image-avatar.png" width="30" style="float:left";>&nbsp;&nbsp;
+        </div>
+        <div class="creation">Creation of&nbsp</div>
+        <div class="name">Jules Wyvern</div>
+      </div>
+    </div>
 </body>
 </html>
