@@ -4,7 +4,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Table of contents
 
--[Overview](#Overview)
+- [Overview](#Overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](images\Screenshot.jpg)
+![](https://github.com/CoderBoi1024/NFTPreviewCard/blob/main/images/Screenshot.jpg)
 
 ### Links
 
